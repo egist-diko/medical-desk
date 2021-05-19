@@ -1,0 +1,118 @@
+.regular-checkbox {
+  display: none;
+}
+
+.regular-checkbox + label {
+  background-color: white;
+  border: 1px solid lightseagreen;
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox:checked + label {
+  background-color: lightseagreen;
+  border: 1px solid lightseagreen;
+  color: white;
+}
+
+.regular-checkbox:checked + label:after {
+  content: url("./assets/tick.svg");
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  color: white;
+}
+
+.regular-radio {
+  display: none;
+}
+.regular-radio + label {
+  background-color: white;
+  border: 1px solid #0fb7b6;
+  padding: 13px;
+  border-radius: 50px;
+  position: relative;
+}
+.regular-radio:checked + label:after {
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  position: absolute;
+  top: 5px;
+  background: white;
+  text-shadow: 0px;
+  left: 5px;
+}
+.regular-radio:checked + label {
+  background-color: #0fb7b6;
+}
+.time_radio {
+  display: none;
+}
+
+.time_radio + label {
+  -webkit-appearance: none;
+  background-color: white;
+  position: relative;
+  color: #16c5b3;
+  width: 100%;
+  max-width: 10rem;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  border: 2px solid #16c5b3;
+}
+
+.time_radio:checked + label {
+  background-color: #16c5b3;
+  color: white;
+}
+
+.react_select_fix__indicators {
+  display: inline;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  border: 2px solid #16c5b3 !important;
+  border-radius: 5px !important;
+  padding-left: 12px !important;
+}
+
+.react-tel-input {
+  padding-left: 45px !important;
+}
+
+.react-tel-input .flag-dropdown {
+  border: 2px solid #16c5b3 !important ;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+@media (max-width: 640px) {
+  .react-select1__control {
+    height: 36px !important;
+  }
+  .react_select_fix__indicator {
+    display: none !important;
+  }
+  .react-tel-input .form-control {
+    height: 2.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
+  .regular-checkbox + label {
+    padding: 10px;
+  }
+  .regular-checkbox:checked + label:after {
+    top: -16px;
+    left: 4px;
+  }
+}
